@@ -20,7 +20,7 @@ def inlinequery(update: Update, context: CallbackContext) -> None:
     update.inline_query.answer(results)
 
 def main() -> None:
-    updater = Updater("5073083350:AAEmyKgroMw7ZpOINVGkjp11vDPWFdhJ2k8")
+    updater = Updater("your_token")
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(CommandHandler("help", help_command))
